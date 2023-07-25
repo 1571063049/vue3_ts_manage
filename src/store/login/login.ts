@@ -39,6 +39,7 @@ const loginModule: Module<IIoginState, IRootState> = {
       // 动态加载路由
       // 1.获取当前用户的路由规则
       const routes = mapManusToRoutes(userMenus)
+      console.log(routes)
 
       // 2.将路由动态添加到main.children中
       for (const route of routes) {

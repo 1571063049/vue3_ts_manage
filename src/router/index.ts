@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router'
 
 import localCache from '@/utils/cache'
 import { firstPath } from '@/utils/map-menus'
+
 const routes: RouteRecordRaw[] = [
   {
     path: '/',

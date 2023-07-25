@@ -52,6 +52,7 @@ export default defineComponent({
     const DialogVisible = ref(false)
     const title = '新建' + props.modalConfig.title
     const formData = ref<any>({})
+
     watch(
       // watch 监听ref对象必须是函数写法，如果是对象，则得写getter/setter
       () => props.defaultInfo,

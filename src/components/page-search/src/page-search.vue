@@ -58,8 +58,8 @@ export default defineComponent({
     // 优化二当用户点击重置
     const handleResetClick = () => {
       // 方法一: Form里面使用v-modele将l-input双向绑定formData里面的属性
-      //From 里面的modelValue数据为空，page-search里面的formData数据也为空，但是el-input里面的内容还在显示不为空
-      //因为el-input和Form里面的formData进行了双向绑定，但是formData是{ ...props.modelValue }浅拷贝的对象，所以和modelValue无关
+      // From 里面的modelValue数据为空，page-search里面的formData数据也为空，但是el-input里面的内容还在显示不为空
+      // 因为el-input和Form里面的formData进行了双向绑定，但是formData是{ ...props.modelValue }浅拷贝的对象，所以和modelValue无关
       // 但是我不理解为啥 formData.value[`${key}`] = originFormData[key] 可以做到让Form里面的formData变为空呢
       // 懂了，watch监听器会监听Form里面的formData的变化，然后将Form里面的formData的值，也就是它的引用赋值给page-search里面的formData
       // 所以说如果 formData.value = originFormData ，只会影响page-search里面的formData，而不会影响Form里面的formData

@@ -8,7 +8,7 @@ const TIME_OUT = 10000
 if (process.env.NODE_ENV === 'development') {
   BASE_URL = '/api' //不能反了顺序，比如 'api/'
 } else if (process.env.NODE_ENV === 'production') {
-  BASE_URL = 'http://123.207.32.32:8000/'
+  BASE_URL = '101.33.220.200:8000/'
 } else {
   BASE_URL = 'http://123.207.32.32:8000/'
 }

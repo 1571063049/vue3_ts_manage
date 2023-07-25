@@ -38,7 +38,7 @@ export default function (axios: GFRequest): void {
 
       const data = res.data
 
-      if (data.returnCode === '-1001') {
+      if (data && data.returnCode === '-1001') {
         console.log('请求失败~, 错误信息')
       } else {
         return data

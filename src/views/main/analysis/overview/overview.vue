@@ -12,12 +12,14 @@
         title="开发依赖"
         :column="2"
         :tableDesctipt="developmentDependence"
-      ></gf-descriptions>
+      >
+      </gf-descriptions>
       <gf-descriptions
         title="生产依赖"
         :column="2"
         :tableDesctipt="productionDependence"
-      ></gf-descriptions>
+      >
+      </gf-descriptions>
     </gf-card>
     <gf-card title="项目结构">
       <gf-code language="bash" :code="projectDircetory"></gf-code>
@@ -27,19 +29,22 @@
         title="文件命名规范"
         :column="1"
         :tableDesctipt="fileNamedtStandard"
-      ></gf-descriptions>
+      >
+      </gf-descriptions>
       <gf-descriptions
         title="组件编写规范"
         :column="1"
         :tableDesctipt="writeComponenttStandard"
-      ></gf-descriptions>
+      >
+      </gf-descriptions>
     </gf-card>
     <gf-card title="Git提交规范">
       <gf-descriptions
         title="Git提交规范"
         :column="1"
         :tableDesctipt="gitCommitStandard"
-      ></gf-descriptions>
+      >
+      </gf-descriptions>
     </gf-card>
   </div>
 </template>

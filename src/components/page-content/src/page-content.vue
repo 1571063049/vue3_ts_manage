@@ -14,7 +14,7 @@
             新建{{ tableContentConfig.title }}
           </el-button>
           <el-button type="info" v-if="isQuery" @click="handleQueryClick">
-            查询用户
+            查询{{ tableContentConfig.title }}
           </el-button>
           <el-button
             type="danger"

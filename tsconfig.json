@@ -21,7 +21,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     // 映射文件 ts -> js
-    "sourceMap": true,
+    "sourceMap": false,
     // 用于解析非绝对模块名的基本目录，文件路径在解析时基本（根）的url，默认是"./","."和"./"一样
     // 也就是./ 表示 当前的目录
     "baseUrl": ".",

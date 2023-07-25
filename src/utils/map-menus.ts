@@ -12,7 +12,7 @@ export function mapManusToRoutes(userMenus: any[]): RouteRecordRaw[] {
   const routeFiles = require.context('../router/main', true, /\.ts/)
 
   routeFiles.keys().forEach((path) => {
-    // 获取所有route(去除.)
+    // 获取所有route(去除.)  './analysis/dashboard/dashboard.ts' -> '/analysis/dashboard/dashboard.ts'
     const route = require('../router/main' + path.split('.')[1])
     // 获取所有路由的路径信息
     allRoutes.push(route.default)
